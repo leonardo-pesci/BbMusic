@@ -1,0 +1,25 @@
+/* ^ General */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-text: #272626;
+    --color-bg: #F0D8B6;
+    --color-1: #D1E2F3;
+    --color-2: #E9E0D1;
+    --color-nav: #036DA4;
+    --color-btn: #D95E31;
+
+}
+
+body {
+    height: 100vh; /* ! */
+    font-size: 16px;
+    font-family: 'Unna', serif;
+    font-weight: 400;
+    color: var(--color-text);
+    background-color: var(--color-bg);
+}
