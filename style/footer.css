@@ -1,3 +1,7 @@
 #footer {
+    width: 100vw;
+    height: 50px;
     background-color: var(--color-nav);
+    position: absolute;
+    bottom: 0;
 }

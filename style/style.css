@@ -23,3 +23,24 @@ body {
     color: var(--color-text);
     background-color: var(--color-bg);
 }
+
+
+
+/* ^ Components */
+
+
+
+/* ^ Utilities */
+.hidden {
+    display: none;
+}
+
+.fitImg {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.pointer {
+    cursor: pointer
+}
