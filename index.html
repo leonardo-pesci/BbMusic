@@ -28,6 +28,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
+
     <!-- ^ Header -->
     <div id="header">
         <header class="d-flex justify-content-center py-3">
@@ -45,7 +46,7 @@
                     <span>Chi siamo</span>
                 </li>
                 <li class="nav-item">
-                    <span>Contattiiiiiiiiiiii</span>
+                    <span>Contatti</span>
                 </li>
             </ul>
           </header>
@@ -54,15 +55,62 @@
     <!-- ^ Home -->
     <div id="home">
 
-        <div id="hero"></div>
+        <!-- Hero -->
+        <div id="hero">
 
-        <div id="description"></div>
+        </div>
 
-        <div id="carousel"></div>
+        <div id="homeBox">
 
-        <div id="counter"></div>
+            <!-- Descrizione -->
+            <div id="description" class="homeBoxItem">
 
-        <div id="feedback"></div> <!-- ! 25 recensioni che cambiano (js) -->
+                <div class="homeBoxItemContent">
+
+                    <h2 class="homeBoxItemTitle">Il progetto</h2>
+                    
+                    <p class="homeBoxItemText">Benvenuti alla Bbmusic, situata nel vibrante cuore di Roma, in Viale Mazzini 123. La nostra scuola è dedicata a nutrire la passione per la musica in studenti di tutte le età, offrendo un'educazione musicale di alta qualità in un ambiente ispiratore e accogliente.
+                    La musica è un linguaggio universale che va oltre le barriere culturali, unendo le persone in un'esperienza condivisa di espressione artistica. Alla Bbmusic, ci impegniamo a rendere l'apprendimento della musica accessibile a tutti, con programmi su misura che rispondono alle esigenze individuali di ogni studente, dai principianti agli avanzati.
+                    Il nostro corpo docente, composto da musicisti professionisti e appassionati, è il cuore della nostra offerta educativa. Utilizzando metodi di insegnamento che integrano sia la teoria sia la pratica, miriamo a sviluppare non solo le abilità tecniche ma anche la creatività e la sensibilità musicale degli studenti.
+                    Alla Bbmusic, valorizziamo l'innovazione e l'inclusività, offrendo opportunità per tutti gli appassionati di musica. Il nostro invito è aperto a chiunque desideri esplorare il mondo della musica e crescere come artista e individuo in un ambiente stimolante e supportivo.</p>
+                </div>
+                    
+                <div id="descriptionImg" class="homeBoxItemImg fitImg"></div>
+                    
+            </div>
+
+            <!-- Carosello -->
+            <div id="carousel">
+                <div id="carouselExampleControls" class="carousel slide" data-mdb-ride="carousel" data-mdb-carousel-init>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="https://mdbcdn.b-cdn.net/img/new/slides/041.webp" class="d-block w-100" alt="Wild Landscape"/>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://mdbcdn.b-cdn.net/img/new/slides/042.webp" class="d-block w-100" alt="Camera"/>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://mdbcdn.b-cdn.net/img/new/slides/043.webp" class="d-block w-100" alt="Exotic Fruits"/>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-mdb-target="#carouselExampleControls" data-mdb-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-mdb-target="#carouselExampleControls" data-mdb-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
+
+            <!-- Counter -->
+            <div id="counter"></div>
+
+            <!-- Recensioni -->
+            <div id="feedback"></div> <!-- ! 25 recensioni che cambiano (js) -->
+
+        </div>
 
     </div>
 
@@ -111,12 +159,28 @@
     </div>
 
     <!-- ^ Footer -->
-    <div id="footer">
+    <footer id="footer" class="d-flex flex-wrap justify-content-center align-items-center py-3 my-4 border-top">
+        <div class="d-flex align-items-center">
+    
+        <ul id="logosContainer" class="nav justify-content-end list-unstyled d-flex">
 
-    </div>
+            <li class="logo">
+                <a class="text-body-secondary" href="https://www.facebook.com/bbscuoladimusica"><img src="./img/logo/facebook.png" alt=""></a>
+            </li>
+            <li class="logo">
+                <a class="text-body-secondary" href="https://www.instagram.com/bbmusicroma?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img src="./img/logo/instagram.png" alt=""></a>
+            </li>
+            <li class="logo">
+                <a class="text-body-secondary" href=""><img src="./img/logo/tiktok.png" alt=""></a>
+            </li>
+
+        </ul>
+
+    </footer>
 
     
     <!-- ^ Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script defer src="./src/main.js"></script>
 
 </body>

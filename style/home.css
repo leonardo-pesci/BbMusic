@@ -1,3 +1,46 @@
 #home {
     
 }
+
+#hero {
+    width: 100vw;
+    height: calc(100vh - 70px);
+    margin-top: 70px;
+    position: fixed;
+    top: 0;
+    background-image: url(./../img/image.jpg);
+    z-index: -1;
+}
+
+#homeBox {
+    background-color: var(--color-1) !important;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 2.5vw;
+    border-radius: 20px;
+    margin: 80vh 20px 20px;
+}
+
+.homeBoxItem {
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 15px;
+}
+
+.homeBoxItemImg {
+    width: 300%;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+
+#descriptionImg {
+    background-image: url(./../img/desc.jpg);
+}
+
+#carousel {
+    
+}
