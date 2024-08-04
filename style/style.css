@@ -27,7 +27,11 @@ body {
 
 
 /* ^ Components */
-
+h2 {
+    font-size: 32px;
+    margin-left: 24px;
+    margin-bottom: 24px;
+}
 
 
 /* ^ Utilities */

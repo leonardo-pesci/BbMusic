@@ -81,31 +81,83 @@
 
             <!-- Carosello -->
             <div id="carousel">
-                <div id="carouselExampleControls" class="carousel slide" data-mdb-ride="carousel" data-mdb-carousel-init>
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="https://mdbcdn.b-cdn.net/img/new/slides/041.webp" class="d-block w-100" alt="Wild Landscape"/>
-                      </div>
-                      <div class="carousel-item">
-                        <img src="https://mdbcdn.b-cdn.net/img/new/slides/042.webp" class="d-block w-100" alt="Camera"/>
-                      </div>
-                      <div class="carousel-item">
-                        <img src="https://mdbcdn.b-cdn.net/img/new/slides/043.webp" class="d-block w-100" alt="Exotic Fruits"/>
-                      </div>
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-mdb-target="#carouselExampleControls" data-mdb-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="carouselItem">
+                                <div class="carouselImg fitImg" id="article1" alt="..."></div>
+                                <div class="carouselContent">
+                                    <h4 class="carouselTitle">Titolo</h4>
+                                    <p class="carouselText">Lorem ipsum dolor sit amet consectetur adipisicing elit. In, nesciunt et error sapiente adipisci deleniti voluptatibus eum quaerat, quisquam, repellendus nulla veniam quam ad illum.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carouselItem">
+                                <div class="carouselImg fitImg" id="article1" alt="..."></div>
+                                <div class="carouselContent">
+                                    <h4 class="carouselTitle">titolo</h4>
+                                    <p class="carouselText"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carouselItem">
+                                <div class="carouselImg fitImg" id="article1" alt="..."></div>
+                                <div class="carouselContent">
+                                    <h4 class="carouselTitle">titolo</h4>
+                                    <p class="carouselText"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="carouselArrow carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-mdb-target="#carouselExampleControls" data-mdb-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
+                    <button class="carouselArrow carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
                     </button>
-                  </div>
+                </div>
             </div>
 
             <!-- Counter -->
-            <div id="counter"></div>
+            <div id="counter" class="wow fadeIn animated">
+
+                <div class="text-center counter-section wow fadeInUp sm-margin-bottom-ten animated" data-wow-duration="300ms">
+                    
+                    <img class="counter-icon medium-icon" src="./img/counter/people.png" alt="">
+
+                    <span id="people" class="timer counter alt-font appear" data-to="980" data-duration="1200"></span>
+                    <p class="counter-title">Donatori</p>
+                </div>
+
+                <div class="text-center counter-section wow fadeInUp sm-margin-bottom-ten animated" data-wow-duration="300ms">
+                    
+                    <img class="counter-icon medium-icon" src="./img/counter/money.png" alt="">
+
+                    <span id="money" class="timer counter alt-font appear" data-to="63241" data-duration="1500"></span>
+                    <p class="counter-title">Raccolti</p>
+                </div>
+
+                <div class="text-center counter-section wow fadeInUp sm-margin-bottom-ten animated" data-wow-duration="300ms">
+                    
+                    <img class="counter-icon medium-icon" src="./img/counter/percentage.png" alt="">
+
+                    <span id="percentage" class="timer counter alt-font appear" data-to="15" data-duration="900"></span>
+                    <p class="counter-title">Progresso</p>
+                </div>
+
+            </div>
 
             <!-- Recensioni -->
             <div id="feedback"></div> <!-- ! 25 recensioni che cambiano (js) -->
