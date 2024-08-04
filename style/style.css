@@ -33,6 +33,9 @@ p {
 /* ^ Components */
 h2 {
     font-size: 32px;
+}
+
+.subtitle {
     margin-left: 24px;
     margin-bottom: 24px;
 }

@@ -4,6 +4,10 @@
 const navBtns = document.querySelectorAll('.navBtn');
 const mainSections = document.querySelectorAll('.mainSection')
 const counters = document.querySelectorAll('.counterNumber')
+const reviewImg = document.querySelectorAll('.reviewImg')
+const reviewName = document.querySelectorAll('.reviewName')
+const reviewText = document.querySelectorAll('.reviewText')
+const reviewStars = document.querySelectorAll('.reviewStars')
 
 
 
@@ -13,6 +17,15 @@ const counters = document.querySelectorAll('.counterNumber')
 let lastSection = 'home'
 const lastSectionStorage = localStorage.getItem('lastSection')
 if (lastSectionStorage) lastSection = JSON.parse(lastSectionStorage)
+let reviews = [
+    {
+        img: 'img',
+        name: 'Alessandro Poltrini',
+        text: 'Bellissima scuola',
+        star: 4,
+    },
+
+]
 
 
 
@@ -97,6 +110,8 @@ let startCounters = (counter) => {
     }, step);
     
 }
+
+
 
 
 
