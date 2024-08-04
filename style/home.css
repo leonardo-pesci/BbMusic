@@ -104,11 +104,11 @@
 }
 
 #article2 {
-    background-image: url(https://www.bbmusic.it/wp-content/uploads/2022/08/bb-7.jpg);
+    background-image: url(https://www.bbmusic.it/wp-content/uploads/2022/08/bb-3.jpg);
 }
 
 #article3 {
-    background-image: url(https://www.bbmusic.it/wp-content/uploads/2022/08/bb-7.jpg);
+    background-image: url(https://www.bbmusic.it/wp-content/uploads/2022/08/bb-6.jpg);
 }
 
 .carouselArrow {
@@ -164,6 +164,11 @@
 }
 
 /* ^ Reviews */
+#reviews {
+    position: relative;
+    padding-bottom: 80px;
+}
+
 .reviewItem {
     display: flex;
     flex-direction: column;
@@ -202,4 +207,22 @@
 
 .reviewStars i {
     color: var(--color-nav);
+}
+
+#refreshBtn {
+    color: var(--color-nav);
+    background-color: var(--color-btn);
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 0);
+}
+
+#refreshIcon {
+    width: 18px;
+}
+
+.rotate {
+    transform: rotate(180deg);
+    transition-duration: 500ms;
 }
