@@ -7,6 +7,9 @@ const mainSections = document.querySelectorAll('.mainSection')
 //^========================================================================
 //^                            VARIABILI
 //^========================================================================
+let lastSection = 'home'
+const lastSectionStorage = localStorage.getItem('lastSection')
+if (lastSectionStorage) lastSection = JSON.parse(lastSectionStorage)
 
 //^========================================================================
 //^                            FUNZIONI
@@ -16,20 +19,32 @@ let setLastSection = (lastSection) => {
 }
 
 let showSection = (item) => {
-        let lowerItem = item.toLowerCase()
-        
-        mainSections.forEach( (section) => {
-            section.classList.add('hidden')
-        })
+    // cambia il colore dei navBtn
+    navBtns.forEach( (btn) => {
+        btn.classList.remove('selected')
+    })
+    item.classList.add('selected')
 
-        setLastSection(item)
+    // cambia da una sezione all'altra
+    let name = item.id.replace('Btn', '')
+    let lowerItem = name.toLowerCase()
+    
+    mainSections.forEach( (section) => {
+        section.classList.add('hidden')
+    })
 
-        const section = document.querySelector(`#${lowerItem}`)
-        section.classList.remove('hidden')
+    setLastSection(lowerItem)
+
+    const section = document.querySelector(`#${lowerItem}`)
+    section.classList.remove('hidden')
 }
 
-showSection(lastSection)
 
+let lastSectionNode = document.querySelector('#' + lastSection + 'Btn')
+showSection(lastSectionNode)
+
+
+/*
 // L'observer
 let options = {
 	root: null,
@@ -96,77 +111,10 @@ let startCounters = (counter) => {
     }, step);
     
 }
-
-document.querySelector('#' + lastSection + 'Btn').style.color = 'white'
+*/
 
 //^========================================================================
 //^                             EVENTI
 //^========================================================================
 navBtns.forEach( (item) => {
-    item.addEventListener('click', () => {
-        let name = item.id.replace('Btn', '')
-        navBtns.forEach( (btn) => {
-            btn.style.color = 'var(--color-2)'
-        })
-        item.style.color = 'white'
-        
-        showSection(name)
-    })
-})
-
-
-
-
-
-
-// section menu active
-function onScroll(event) {
-    const sections = document.querySelectorAll(".menu-scroll");
-    const scrollPos =
-    window.pageYOffset ||
-    document.documentElement.scrollTop ||
-    document.body.scrollTop;
-
-    for (let i = 0; i < sections.length; i++) {
-    const currLink = sections[i];
-    const val = currLink.getAttribute("href");
-    const refElement = document.querySelector(val);
-    const scrollTopMinus = scrollPos + 73;
-    if (
-        refElement.offsetTop <= scrollTopMinus &&
-        refElement.offsetTop + refElement.offsetHeight > scrollTopMinus
-    ) {
-        document.querySelector(".menu-scroll").classList.remove("active");
-        currLink.classList.add("active");
-    } else {
-        currLink.classList.remove("active");
-    }
-    }
-}
-
-window.document.addEventListener("scroll", onScroll);
-// ==== About Tabs
-const tabButtons = document.querySelectorAll(".tabButtons button");
-const tabPanels = document.querySelectorAll(".tabPanel");
-
-function showPanel(panelIndex) {
-    tabButtons.forEach(function (node) {
-    node.classList.remove(
-        "hi",
-        "ne",
-        "rj",
-    );
-    });
-    tabButtons[panelIndex].classList.add(
-    "hi",
-    "ck",
-    "ne",
-    "rj",
-    );
-    tabPanels.forEach(function (node) {
-    node.style.display = "none";
-    });
-    tabPanels[panelIndex].style.display = "flex";
-}
-showPanel(0);
-
+    item.addEventListener('click', () => showSection(item))})

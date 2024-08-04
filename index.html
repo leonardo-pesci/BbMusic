@@ -3,7 +3,7 @@
 <head>
     <!-- ^ Info -->
     <title>Bbmusic</title>
-    <link rel="icon" href="./img/favicon.ico"><link href="style.css" rel="stylesheet">
+    <!-- <link rel="icon" href="./img/favicon.ico"><link href="style.css" rel="stylesheet"> -->
 
     <!-- ^ Meta -->
     <meta charset="UTF-8" />
@@ -33,19 +33,19 @@
     <div id="header">
         <header class="d-flex justify-content-center py-3">
             <ul class="nav nav-pills" id="navContainer">
-                <li class="nav-item">
+                <li class="nav-item navBtn selected" id="homeBtn">
                     <span>Home</span>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item navBtn" id="corsiBtn">
                     <span>Corsi</span>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item navBtn" id="docentiBtn">
                     <span>Docenti</span>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item navBtn" id="chisiamoBtn">
                     <span>Chi siamo</span>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item navBtn" id="contattiBtn">
                     <span>Contatti</span>
                 </li>
             </ul>
@@ -53,7 +53,7 @@
     </div>
 
     <!-- ^ Home -->
-    <div id="home">
+    <div class="mainSection" id="home">
 
         <!-- Hero -->
         <div id="hero">
@@ -115,7 +115,7 @@
     </div>
 
     <!-- ^ Corsi -->
-    <div id="corsi">
+    <div class="mainSection hidden" id="corsi">
 
         <div id="corsiIntro"></div>
 
@@ -126,7 +126,7 @@
     </div>
 
     <!-- ^ Docenti -->
-    <div id="docenti">
+    <div class="mainSection hidden" id="docenti">
 
         <div id="docentiIntro"></div>
 
@@ -135,7 +135,7 @@
     </div>
 
     <!-- ^ Chi siamo -->
-    <div id="chisiamo">
+    <div class="mainSection hidden" id="chisiamo">
 
         <div id="goals"></div>
 
@@ -148,7 +148,7 @@
     </div>
 
     <!-- ^ Contatti -->
-    <div id="contatti">
+    <div class="mainSection hidden" id="contatti">
 
         <div id="contattiInfo"></div>
 
@@ -171,7 +171,7 @@
                 <a class="text-body-secondary" href="https://www.instagram.com/bbmusicroma?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img src="./img/logo/instagram.png" alt=""></a>
             </li>
             <li class="logo">
-                <a class="text-body-secondary" href=""><img src="./img/logo/tiktok.png" alt=""></a>
+                <a class="text-body-secondary" href="https://www.tiktok.com/@bbmusicroma4"><img src="./img/logo/tiktok.png" alt=""></a>
             </li>
 
         </ul>
