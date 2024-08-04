@@ -3,6 +3,9 @@
 //^========================================================================
 const navBtns = document.querySelectorAll('.navBtn');
 const mainSections = document.querySelectorAll('.mainSection')
+const counters = document.querySelectorAll('.counterNumber')
+
+
 
 //^========================================================================
 //^                            VARIABILI
@@ -10,6 +13,8 @@ const mainSections = document.querySelectorAll('.mainSection')
 let lastSection = 'home'
 const lastSectionStorage = localStorage.getItem('lastSection')
 if (lastSectionStorage) lastSection = JSON.parse(lastSectionStorage)
+
+
 
 //^========================================================================
 //^                            FUNZIONI
@@ -44,7 +49,6 @@ let lastSectionNode = document.querySelector('#' + lastSection + 'Btn')
 showSection(lastSectionNode)
 
 
-/*
 // L'observer
 let options = {
 	root: null,
@@ -86,32 +90,15 @@ let startCounters = (counter) => {
             clearInterval(timer) 
             value = end
         }
-        
-        let response = ''
 
-        switch (counter.id) {
-            case 'people':
-                response = Math.floor(value)
-                break;
-
-            case 'money':
-                response = '€' + Math.floor(value / 100) + '.' + Math.floor(value % 100)
-                break;
-        
-            case 'percentage':
-                response = Math.floor(value) + '%'
-                break;
-        
-            default:
-                break;
-        }
-
+        let response = Math.floor(value)
         counter.innerHTML = response
 
     }, step);
     
 }
-*/
+
+
 
 //^========================================================================
 //^                             EVENTI

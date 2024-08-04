@@ -24,6 +24,10 @@ body {
     background-color: var(--color-bg);
 }
 
+p {
+    margin: 0 !important;
+}
+
 
 
 /* ^ Components */

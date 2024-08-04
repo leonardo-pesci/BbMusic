@@ -116,3 +116,51 @@
     color: red !important;
     margin: 0 10px;
 }
+
+
+
+/* ^ Counter */
+#counter {
+    display: flex;
+    flex-direction: row !important;
+    gap: calc(5vw + 10px);
+    visibility: visible;
+    animation-name: fadeIn;
+    margin: auto;
+}
+
+.counterItem {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    animation-duration: 300ms;
+    animation-name: fadeInUp;
+}
+
+.counterNumber {
+    width: 90px;
+    height: 40px;
+    font-size: 32px;
+    color:#000;
+    line-height:60px;
+    display:block;
+    letter-spacing: 2px;
+}
+
+.counterIcon {
+    width: 70px;
+    height: 70px;
+    position: relative;
+    top: 15px;
+}
+
+.counterText{
+    font-size: 16px;
+    letter-spacing:2px;
+    text-transform: uppercase
+}
+
+/* ^ Feedback */
