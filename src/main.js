@@ -83,7 +83,7 @@ let reviews = [
 
     {
         img: 'utent9',
-        name: 'Chiara Rizzo',
+        name: 'MariaTeresa Luce',
         text: 'Varie discipline musicali disponibili, ottimo per esplorare nuovi interessi.',
         stars: 4,
     },
@@ -181,7 +181,7 @@ let reviews = [
 
     {
         img: 'utent23',
-        name: 'Michele Mariani',
+        name: 'Michela Mariani',
         text: 'Insegnanti eccezionali, attenti e molto preparati.',
         stars: 5,
     },
@@ -201,6 +201,7 @@ let reviews = [
     },
 ]
 let reviewsCopy = reviews.slice()
+let deg = 0
 
 
 
@@ -340,7 +341,8 @@ navBtns.forEach( (item) => {
 })
 
 refreshBtn.addEventListener('click', () => {
-    refreshIcon.style =  'transform: rotate(180deg); transition-duration: 500ms;'
+    deg = deg + 180
+    refreshIcon.style =  `transform: rotate(${deg}deg); transition-duration: 500ms;`
 
     showInterviews()
 })

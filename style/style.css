@@ -24,13 +24,17 @@ body {
     background-color: var(--color-bg);
 }
 
+
+
+/* ^ Rules */
+.mainSection {
+    margin-top: 100px !important;
+}
+
 p {
     margin: 0 !important;
 }
 
-
-
-/* ^ Components */
 h2 {
     font-size: 32px;
 }
@@ -39,6 +43,14 @@ h2 {
     margin-left: 24px;
     margin-bottom: 24px;
 }
+
+
+
+/* ^ Components */
+.descriptionText {
+    font-size: 18px;
+}
+
 
 
 /* ^ Utilities */

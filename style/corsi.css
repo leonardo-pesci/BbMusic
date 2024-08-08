@@ -1,5 +1,5 @@
 #corsi {
-
+    width: 100%;
 }
 
 #typesList {
@@ -12,8 +12,18 @@
 
 #instrumentsList {
     display: flex;
+    margin-top: 40px;
 }
 
 .instrumentsItem {
     
+}
+
+.albumItem {
+    padding: 10px 20px;
+}
+
+.albumImg {
+    width: 100%;
+    cursor: pointer;
 }

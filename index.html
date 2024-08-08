@@ -65,20 +65,20 @@
         <div id="homeBox">
 
             <!-- Descrizione -->
-            <div id="description" class="homeBoxItem">
+            <div class="descriptionBox container mt-5" id="description">
 
-                <div class="homeBoxItemContent">
-
-                    <h2 class="subtitle homeBoxItemTitle">Il progetto</h2>
-                    
-                    <p class="homeBoxItemText">Benvenuti alla Bbmusic, situata nel vibrante cuore di Roma, in Viale Mazzini 123. La nostra scuola è dedicata a nutrire la passione per la musica in studenti di tutte le età, offrendo un'educazione musicale di alta qualità in un ambiente ispiratore e accogliente.
-                    La musica è un linguaggio universale che va oltre le barriere culturali, unendo le persone in un'esperienza condivisa di espressione artistica. Alla Bbmusic, ci impegniamo a rendere l'apprendimento della musica accessibile a tutti, con programmi su misura che rispondono alle esigenze individuali di ogni studente, dai principianti agli avanzati.
-                    Il nostro corpo docente, composto da musicisti professionisti e appassionati, è il cuore della nostra offerta educativa. Utilizzando metodi di insegnamento che integrano sia la teoria sia la pratica, miriamo a sviluppare non solo le abilità tecniche ma anche la creatività e la sensibilità musicale degli studenti.
-                    Alla Bbmusic, valorizziamo l'innovazione e l'inclusività, offrendo opportunità per tutti gli appassionati di musica. Il nostro invito è aperto a chiunque desideri esplorare il mondo della musica e crescere come artista e individuo in un ambiente stimolante e supportivo.</p>
+                <h2 class="descriptionTitle mb-4 text-center">Titolo del Componente</h2>
+    
+                <div class="descriptionContent row">
+                    <div class="col-lg-7 mb-3 mb-lg-0 d-flex align-items-center">
+                        <p class="descriptionText">
+                            Questo è il testo che accompagna l'immagine nel componente. Si adatta per essere responsive su tutti i dispositivi. Può variare in lunghezza e sarà sempre accanto all'immagine sulle grandi schermate e sopra su schermate più piccole.
+                        </p>
+                    </div>
+                    <div class="descriptionImg col-lg-5 d-flex justify-content-center">
+                        <img src="https://via.placeholder.com/350" class="img-fluid" alt="Esempio di immagine">
+                    </div>
                 </div>
-                    
-                <div id="descriptionImg" class="homeBoxItemImg fitImg"></div>
-                    
             </div>
 
             <!-- Carousel -->
@@ -170,7 +170,7 @@
                     <div class="col-md-10 col-xl-8 text-center">
                         <h2 class="mb-4">Dicono di noi</h2>
                         <p class="pb-2 mb-md-5 pb-md-0">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam eum porro a pariatur veniam.
+                            Leggi le recensioni dei nostri clienti
                         </p>
                     </div>
                 </div>
@@ -236,12 +236,78 @@
     <!-- ^ Corsi -->
     <div class="mainSection hidden" id="corsi">
 
-        <div id="corsiIntro"></div>
+        <div class="descriptionBox container mt-5" id="corsiIntro">
+
+            <h2 class="descriptionTitle mb-4 text-center">Corsi</h2>
+
+            <div class="descriptionContent row">
+                <div class="col-lg-7 mb-3 mb-lg-0 d-flex align-items-center">
+                    <p class="descriptionText">
+                        Questo è il testo che accompagna l'immagine nel componente. Si adatta per essere responsive su tutti i dispositivi. Può variare in lunghezza e sarà sempre accanto all'immagine sulle grandi schermate e sopra su schermate più piccole.
+                    </p>
+                </div>
+                <div class="descriptionImg col-lg-5 d-flex justify-content-center">
+                    <img src="https://via.placeholder.com/350" class="img-fluid" alt="Esempio di immagine">
+                </div>
+            </div>
+        </div>
 
         <div id="typesList"></div>
 
-        <div id="instrumentsList"></div>
+        <div class="container py-4" id="instrumentsList">
+        
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
+                <div class="albumItem col">
+                    <div class="card shadow-sm">
+                        <img src="./img/instruments/piano.png" class="albumImg" alt="Immagine 1">
+                    </div>
+                </div>
 
+                <div class="albumItem col">
+                    <div class="card shadow-sm">
+                        <img src="./img/instruments/guitar.png" class="albumImg" alt="Immagine 2">
+                    </div>
+                </div>
+
+                <div class="albumItem col">
+                    <div class="card shadow-sm">
+                        <img src="./img/instruments/bass.png" class="albumImg" alt="Immagine 3">
+                    </div>
+                </div>
+
+                <div class="albumItem col">
+                    <div class="card shadow-sm">
+                        <img src="./img/instruments/drums.png" class="albumImg" alt="Immagine 3">
+
+                    </div>
+                </div>
+                <div class="albumItem col">
+                    <div class="card shadow-sm">
+                        <img src="./img/instruments/microphone.png" class="albumImg" alt="Immagine 1">
+                    </div>
+                </div>
+
+                <div class="albumItem col">
+                    <div class="card shadow-sm">
+                        <img src="./img/instruments/violin.png" class="albumImg" alt="Immagine 2">
+                    </div>
+                </div>
+
+                <div class="albumItem col">
+                    <div class="card shadow-sm">
+                        <img src="./img/instruments/saxophone.png" class="albumImg" alt="Immagine 3">
+                    </div>
+                </div>
+
+                <div class="albumItem col">
+                    <div class="card shadow-sm">
+                        <img src="./img/instruments/electronic.png" class="albumImg" alt="Immagine 3">
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </div>
 
     <!-- ^ Docenti -->
