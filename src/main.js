@@ -332,6 +332,23 @@ let generateStars = (stars) => {
 
 showInterviews()
 
+// * Mappa
+let initMap = () => {
+    var mapOptions = {
+        center: new google.maps.LatLng(40.7128, -74.0060),
+        zoom: 10,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    var map = new google.maps.Map(document.querySelector('map'), mapOptions);
+
+    var marker = new google.maps.Marker({
+        position: myLatLng,
+        map: map,
+        title: 'Siamo qui!'
+    });
+}
+
+
 
 //^========================================================================
 //^                             EVENTI

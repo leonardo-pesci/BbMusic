@@ -2,6 +2,14 @@
     width: 100%;
 }
 
+/* ^ Intro */
+#corsiIntroImg {
+    background-image: url(./../img/image.jpg);
+}
+
+
+
+/* ^ Tipologie */
 #typesList {
     display: flex;
 }
@@ -10,6 +18,30 @@
 
 }
 
+.featuresTitle {
+    border-bottom: 1px solid var(--color-nav);
+}
+
+.featureTitle {
+
+}
+
+.featureIcon {
+    margin-top: 5px;
+}
+
+.featureIcon i {
+    font-size: 32px;
+    color: var(--color-nav);
+}
+
+#professionalIcon {
+    background-image: url(.);
+}
+
+
+
+/* ^ Strumenti */
 #instrumentsList {
     display: flex;
     margin-top: 40px;

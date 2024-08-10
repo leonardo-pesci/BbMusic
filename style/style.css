@@ -49,6 +49,13 @@ h2 {
 /* ^ Components */
 .descriptionText {
     font-size: 18px;
+    padding: 12px;
+}
+
+.descriptionImg {
+    min-height: 300px;
+    background-size: cover;
+    margin: 0 !important;
 }
 
 
