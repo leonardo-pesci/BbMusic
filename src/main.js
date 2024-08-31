@@ -235,7 +235,6 @@ let showSection = (item) => {
     section.classList.remove('hidden')
 }
 
-
 let lastSectionNode = document.querySelector('#' + lastSection + 'Btn')
 showSection(lastSectionNode)
 
@@ -281,6 +280,7 @@ let startCounters = (counter) => {
     }, step);
     
 }
+
 
 
 // * Recensioni
